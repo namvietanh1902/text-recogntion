@@ -17,10 +17,16 @@ class Vocab():
         self.i2c[3] = '*'
 
     def encode(self, chars):
+        encoded_chars = [self.go]
         for c in chars:
-            if not self.c2i[c]:
-                raise KeyError(f"Character '{c}' not found in vocabulary.")
-        return [self.go] + [self.c2i[c] for c in chars] + [self.eos]
+            try:
+                encoded_chars.append(self.c2i[c])
+            except KeyError:
+                # Log the specific character causing the KeyError
+                print(f"KeyError: Character '{c}' not found in vocabulary.")
+                raise
+            encoded_chars.append(self.eos)
+        return encoded_chars
     
     def decode(self, ids):
         first = 1 if self.go in ids else 0
