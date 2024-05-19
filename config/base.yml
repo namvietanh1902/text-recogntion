@@ -35,9 +35,9 @@ dataset:
   # name of your dataset
   name: data
   # path to annotation and image
-  data_root: /kaggle/input/viet-text-recognition/kaggle/working/BKAI-Challenge-Vietnamese-OCR/TextRecognitionDataGenerator/trdg/vietnamese/custom_gen_data
-  train_annotation: annotation_train.txt
-  valid_annotation: annotation_val_small.txt
+  data_root: "/kaggle/input/t-r-dataset"
+  train_annotation: test_annotations.txt
+  valid_annotation: train_annotations.txt
   # resize image to 32 height, larger height will increase accuracy
   image_height: 64
   image_min_width: 32
