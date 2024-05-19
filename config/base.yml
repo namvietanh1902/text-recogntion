@@ -1,7 +1,7 @@
 # change to list chars of your dataset or use default vietnamese chars
 vocab: 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789!"#$%&''()*+,-./:;<=>?@[\]^_`{|}~°̃ ̉ ̀ ́ ̣  '
 # cpu, cuda, cuda:0
-device: cuda
+device: cuda:0
 backbone: vgg19_bn
 pretrain: https://vocr.vn/data/vietocr/vgg_transformer.pth
 cnn:
