@@ -18,7 +18,7 @@ class Vocab():
 
     def encode(self, chars):
         for c in chars:
-            if c not in self.c2i:
+            if not self.c2i[c]:
                 raise KeyError(f"Character '{c}' not found in vocabulary.")
         return [self.go] + [self.c2i[c] for c in chars] + [self.eos]
     
