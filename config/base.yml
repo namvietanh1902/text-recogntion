@@ -3,7 +3,7 @@ vocab: 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦ�
 
 # cpu, cuda, cuda:0
 device: cuda
-backbone: "vgg19-bn"
+backbone: vgg19_bn
 pretrain: https://vocr.vn/data/vietocr/vgg_transformer.pth
 cnn:
   pretrained: True
