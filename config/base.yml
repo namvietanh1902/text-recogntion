@@ -2,8 +2,26 @@
 vocab: 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789!"#$%&''()*+,-./:;<=>?@[\]^_`{|}~ '
 
 # cpu, cuda, cuda:0
-device: cuda:0
+device: cuda
 backbone: "vgg19-bn"
+cnn:
+  pretrained: True
+  # pooling stride size
+  ss:
+    - [2, 2]
+    - [2, 2]
+    - [2, 1]
+    - [2, 1]
+    - [1, 1]
+  # pooling kernel size
+  ks:
+    - [2, 2]
+    - [2, 2]
+    - [2, 1]
+    - [2, 1]
+    - [1, 1]
+  # dim of ouput feature map
+  hidden: 256
 
 seq_modeling: transformer
 transformer:
