@@ -1,5 +1,5 @@
 # change to list chars of your dataset or use default vietnamese chars
-vocab: 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789!"#$%&''()*+,-./:;<=>?@[\]^_`{|}~° '
+vocab: 'ÊằỸổ?]ỐỈẲ/ẵ̉ẨếR3ÉvX%ẻỒnỨđ́fƯểqỉụHấỮềKÂỖƠ"'ỂĐgốữdợờỰẶ̃ỵèọởẢù6ầìĩẮ 8ỊỶQỄ-éưPỘj7úặ!ÙÝ+}.bỀOẬÁ<wIỹ9us>GêòẠẾ2ÚFmNÌ=[E#Ớ5Ờ@(ỲT$Ở~Ọ&õýx^ửSũẺCĂớỢừÒỦíBcỏĨịủỗŨẽÔảẳ;0AoẸi1ZỎẦễậộYtỳỷỡyệ̃ỆÀẰờắkÕ\ẫăỪẪỔVh4MỤrÈồJẶứ`ôÃỬeóàạẹaỠá*â°LUzDpÓự{WãẼlÍ_ẩ:Ấ)AVrXHkT# '
 # cpu, cuda, cuda:0
 device: cuda
 backbone: vgg19_bn
