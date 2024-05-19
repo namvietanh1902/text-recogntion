@@ -3,6 +3,7 @@ vocab: 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦ�
 
 # cpu, cuda, cuda:0
 device: cuda:0
+backbone: "vgg19-bn"
 
 seq_modeling: transformer
 transformer:
