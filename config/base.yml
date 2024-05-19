@@ -55,7 +55,7 @@ dataset:
   # name of your dataset
   name: data
   # path to annotation and image
-  data_root: "/kaggle/input/t-r-dataset"
+  data_root: "/kaggle/input/text-recognition-dataset/dataset"
   train_annotation: test_annotations.txt
   valid_annotation: train_annotations.txt
   # resize image to 32 height, larger height will increase accuracy
