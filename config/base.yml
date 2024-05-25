@@ -4,28 +4,29 @@ vocab: 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦ�
 # cpu, cuda, cuda:0
 device: cuda:0
 backbone: vgg19_bn
-pretrain: https://vocr.vn/data/vietocr/vgg_transformer.pth
+pretrain: pretrain: https://vocr.vn/data/vietocr/vgg_seq2seq.pth
 cnn:
-  pretrained: False
-  # pooling stride size
-  ss:
-    - [2, 2]
-    - [2, 2]
-    - [2, 1]
-    - [2, 1]
-    - [1, 1]
-  # pooling kernel size
-  ks:
-    - [2, 2]
-    - [2, 2]
-    - [2, 1]
-    - [2, 1]
-    - [1, 1]
-  # dim of ouput feature map
-  hidden: 256
+    pretrained: True
+    # pooling stride size
+    ss:
+        - [2, 2]
+        - [2, 2]
+        - [2, 1]
+        - [2, 1]
+        - [1, 1]         
+    # pooling kernel size 
+    ks:
+        - [2, 2]
+        - [2, 2]
+        - [2, 1]
+        - [2, 1]
+        - [1, 1]
+    # dim of ouput feature map
+    hidden: 256
+
+seq_modeling: seq2seq
 weights: ./weights/transformerocr.pth
 
-seq_modeling: transformer
 transformer:
   d_model: 256
   nhead: 8
@@ -46,8 +47,8 @@ trainer:
   valid_every: 4000
   iters: 100000
   # where to save our model for prediction
-  export: ./weights/transformerocr.pth
-  checkpoint: ./checkpoint/transformerocr_checkpoint.pth
+  export: ./weights/seq2seq_transformerocr.pth
+  checkpoint: ./checkpoint/seq2seq_transformerocr_checkpoint.pth
   log: ./train.log
   # null to disable compuate accuracy, or change to number of sample to enable validiation while training
   metrics: null
