@@ -4,25 +4,25 @@ vocab: 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦ�
 # cpu, cuda, cuda:0
 device: cuda:0
 backbone: vgg19_bn
-pretrain: pretrain: https://vocr.vn/data/vietocr/vgg_seq2seq.pth
+pretrain: https://vocr.vn/data/vietocr/vgg_seq2seq.pth
 cnn:
-    pretrained: True
-    # pooling stride size
-    ss:
-        - [2, 2]
-        - [2, 2]
-        - [2, 1]
-        - [2, 1]
-        - [1, 1]         
-    # pooling kernel size 
-    ks:
-        - [2, 2]
-        - [2, 2]
-        - [2, 1]
-        - [2, 1]
-        - [1, 1]
-    # dim of ouput feature map
-    hidden: 256
+  pretrained: True
+  # pooling stride size
+  ss:
+    - [2, 2]
+    - [2, 2]
+    - [2, 1]
+    - [2, 1]
+    - [1, 1]
+  # pooling kernel size
+  ks:
+    - [2, 2]
+    - [2, 2]
+    - [2, 1]
+    - [2, 1]
+    - [1, 1]
+  # dim of ouput feature map
+  hidden: 256
 
 seq_modeling: seq2seq
 weights: ./weights/transformerocr.pth
