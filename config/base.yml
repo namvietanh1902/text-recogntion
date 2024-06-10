@@ -39,7 +39,7 @@ optimizer:
   pct_start: 0.1
 
 trainer:
-  batch_size: 64
+  batch_size: 32
   print_every: 200
   valid_every: 4000
   iters: 72000
