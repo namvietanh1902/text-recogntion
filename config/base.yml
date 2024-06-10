@@ -42,7 +42,7 @@ trainer:
   batch_size: 32
   print_every: 200
   valid_every: 4000
-  iters: 100000
+  iters: 80000
   # where to save our model for prediction
   export: ./weights/v2_transformerocr.pth
   checkpoint: ./checkpoint/trained_transformerocr_checkpoint.pth
